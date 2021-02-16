@@ -4,8 +4,10 @@ api_key = "15dc19efb6f587aae0b38b158c40253c"
 api_url = "http://api.openweathermap.org/data/2.5/weather?appid=" + api_key + "&units=metric&"
 
 # Display a menu for the user
+print("Welcome to Weather Map Station!")
 while True:
-    option = input("Enter 'Z' to enter a zip code, 'C' to enter a city, or 'Q' to quit: ").lower()
+    option = input("You may search by City or Zip Code to see the weather in the area.\n"
+                   "Enter 'C' to enter a City, 'Z' to enter a Zip Code, or 'Q' to Quit: ").lower()
 
     if option == "z" or option == "c":
         # Get input
