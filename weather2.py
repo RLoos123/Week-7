@@ -25,9 +25,9 @@ while True:
             else:
                 print("Weather Status   = " + json_response["weather"][0]["description"])
                 print("Temp (Celsius)   = " + str(json_response["main"]["temp"]) + " degrees")
-                print("Humidity         = " + str(json_response["main"]["humidity"]))
-                print("Visibility       = " + str(json_response["visibility"]))
-                print("Wind Speed       = " + str(json_response["wind"]["speed"]) + "m/s")
+                print("Humidity         = " + str(json_response["main"]["humidity"]) + "%")
+                print("Visibility       = " + str(json_response["visibility"]) + " Meters")
+                print("Wind Speed       = " + str(json_response["wind"]["speed"]) + " m/s")
                 print("Wind Direction   = " + str(json_response["wind"]["deg"]) + " degrees")
         except requests.exceptions.HTTPError as e:
             print("Network error = ", e)
